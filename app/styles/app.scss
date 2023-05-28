@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//Colors
+:root {
+  --black: #000d15;
+  --bodyDark: #002f3f;
+  --bodyLight: #1a344d;
+  --button: #006a9a;
+  --letter: #c2cfdf;
+}
+
+//Responsive sizes
+$mobile: 480px;
+$tablet: 768px;
+$laptop: 1280px;
+
+body {
+  background: var(--bodyLight);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+a {
+  color: var(--letter);
+  text-decoration: none;
+}
+
+button {
+  background: var(--button);
+  color: var(--letter);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.row {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.profile-img img {
+  margin: 40px auto;
+  border-radius: 50%;
+  border: 3px solid var(--button);
+  box-shadow: 0 0 30px var(--bodyDark);
+}
+
+@import "./nav.scss";

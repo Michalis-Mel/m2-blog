@@ -153,6 +153,15 @@ main.post > .row .back:hover {
   background: var(--black);
 }
 
+@media screen and (max-width: 480px) {
+  main.post > .row h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  main.post > .row h4 {
+    font-size: 18px;
+  }
+}
 .profile-img {
   display: flex;
   align-items: center;
@@ -232,6 +241,8 @@ main.home > .row .welcome {
   text-align: center;
   max-width: 650px;
   margin: 0 auto 50px auto;
+  padding: 50px 0;
+  box-sizing: border-box;
 }
 main.home > .row .welcome h1 {
   font-size: 40px;
@@ -306,8 +317,11 @@ main.home > .row .posts ul .listItem a:hover h4, main.home > .row .posts ul .lis
   }
 }
 @media screen and (max-width: 480px) {
-  main.home .welcome h1 {
-    font-size: 35px;
+  main.home .row .welcome h1 {
+    font-size: 30px;
+  }
+  main.home .row .welcome p {
+    font-size: 18px;
   }
   main.home > .row .posts ul .listItem {
     flex: 0 0 100%;

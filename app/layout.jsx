@@ -1,10 +1,13 @@
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
+
 import "./styles/app.scss";
 
 import Navbar from "./components/Navbar";
-import MyProfilePic from "./components/MyProfilePic";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "M² Blog",
@@ -15,9 +18,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className={poppins.className}>
         <Navbar />
-        <MyProfilePic />
         {children}
       </body>
     </html>

@@ -1,0 +1,82 @@
+.profile-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 30px auto;
+
+  .box {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    background: rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 20px #000;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background-image: conic-gradient(
+        transparent,
+        transparent,
+        var(--button),
+        transparent
+      );
+      animation: animate 4s linear infinite;
+      animation-delay: -2s;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background-image: conic-gradient(
+        transparent,
+        transparent,
+        var(--button),
+        transparent
+      );
+      animation: animate 4s linear infinite;
+    }
+
+    @keyframes animate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    span {
+      position: absolute;
+      inset: 5px;
+      background: var(--bodyLight);
+      border-radius: 20px;
+      z-index: 1;
+    }
+
+    img {
+      position: relative;
+      z-index: 2;
+      border-radius: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .profile-img .box {
+    width: 210px;
+    height: 210px;
+
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}

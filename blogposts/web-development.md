@@ -1,5 +1,5 @@
 ---
-title: "Exploring the Power of Next.js 13"
+title: "Exploring Web Development"
 date: "2023-05-27"
 ---
 

@@ -1,11 +1,16 @@
-import { Poppins } from "next/font/google";
+import { Poppins, Oswald } from "next/font/google";
 
 import "./styles/app.scss";
 
 import Navbar from "./components/Navbar";
 
-const poppins = Poppins({
-  weight: "400",
+export const poppins = Poppins({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+});
+
+export const oswald = Oswald({
+  weight: "500",
   subsets: ["latin"],
 });
 
@@ -18,7 +23,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
+      <body className={poppins.className} suppressHydrationWarning={true}>
         <Navbar />
         {children}
       </body>

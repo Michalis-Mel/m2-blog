@@ -1,13 +1,8 @@
-import { Oswald } from "next/font/google";
+import { oswald } from "../layout";
 import Link from "next/link";
 import Image from "next/image";
 import { FaFacebook, FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 import logoImg from "../../public/images/logo-small.png";
-
-const oswald = Oswald({
-  weight: "500",
-  subsets: ["latin"],
-});
 
 export default function Navbar() {
   return (

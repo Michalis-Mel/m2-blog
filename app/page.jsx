@@ -1,5 +1,6 @@
 import Posts from "./components/Posts";
 import MyProfilePic from "./components/MyProfilePic";
+import { RobotCanvas } from "./components/canvas";
 
 export default function Home() {
   return (
@@ -16,6 +17,9 @@ export default function Home() {
             growth, there&apos;s something for everyone here. Thank you for
             visiting, and I hope you enjoy your time on my blog.
           </p>
+
+          <h4>And this is Rob, the blog&apos;s administrator.</h4>
+          <RobotCanvas />
         </div>
         <Posts />
       </div>

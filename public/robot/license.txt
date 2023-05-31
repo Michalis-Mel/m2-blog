@@ -1,0 +1,11 @@
+Model Information:
+* title:	Nuirter Real-Time
+* source:	https://sketchfab.com/3d-models/nuirter-real-time-937e35f82a044b5890528f0f77814dc3
+* author:	peregarin (https://sketchfab.com/peregarin)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Nuirter Real-Time" (https://sketchfab.com/3d-models/nuirter-real-time-937e35f82a044b5890528f0f77814dc3) by peregarin (https://sketchfab.com/peregarin) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

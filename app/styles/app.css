@@ -277,7 +277,6 @@ main.home > .row .posts .post-list .post_search {
   margin-bottom: 40px;
 }
 main.home > .row .posts .post-list .post_search input {
-  z-index: 2;
   outline: none;
   font-size: 16px;
   width: 100%;
@@ -286,6 +285,7 @@ main.home > .row .posts .post-list .post_search input {
   border-radius: 20px;
   padding: 10px 20px;
   box-sizing: border-box;
+  box-shadow: 0 0 20px rgba(201, 201, 251, 0.7);
 }
 main.home > .row .posts .post-list .post_search input::-moz-placeholder {
   color: var(--bodyDark);

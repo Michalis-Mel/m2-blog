@@ -346,9 +346,23 @@ main.home > .row .posts ul .listItem a h4 {
 main.home > .row .posts ul .listItem a p {
   flex-grow: 1;
   font-size: 18px;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
   color: var(--letter);
   transition: all 0.3s ease-in-out;
+}
+main.home > .row .posts ul .listItem a .share_btns {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+main.home > .row .posts ul .listItem a .share_btns button {
+  transition: all 0.3s ease-in-out;
+}
+main.home > .row .posts ul .listItem a .share_btns button:hover {
+  transform: scale(1.2);
 }
 main.home > .row .posts ul .listItem a:hover h4, main.home > .row .posts ul .listItem a:hover p {
   color: var(--button);
